@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mogyorósi Lilla">
+    <meta name="copyright" content="Oktatási célokra">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./kesz_kepek/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Receptek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("receptek_linkek");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="fel"></h1>
+    </header>
+    <script src="cim.js"></script>
+    <div class="csik"></div>
+    <nav>
+        <ul>
+            <li><a href="fooldal.html">Főoldal</a></li>
+            <li><a href="kaloria_kalkulator.html">Kalória kalkulátor</a></li>
+            <li><a class="aktualis" href="#">Receptek</a></li>
+            <li><a href="receptek_elofizetessel.html">Receptek előfizetéssel</a></li>
+            <li><a href="elofizetes.html">Előfizetés</a></li>
+        </ul>
+    </nav>
+    <div class="receptek_navigacio">
+        <a href="#" class="aktiv">Receptek</a>
+        <div id="receptek_linkek">
+          <a href="#zabkasa_recept">Zabkása</a>
+          <a href="#poharkrem_recept">Pohárkrém</a>
+          <a href="#cezar_salata_recept">Cézár saláta</a>
+          <a href="#sushi_recept">Sushi</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="zabkasa">
+        <article class="zabkasa_szoveg">
+            <h2><a id="zabkasa_recept">Zabkása</a></h2>
+            <h3>Hozzávalók</h3>
+            <ul>
+                <li>3 dl tej</li>
+                <li>3 ek zabpehely</li>
+                <li>méz/cukor/édesítő</li>
+                <li>gyümölcs</li>
+            </ul>
+            <h3>Elkészítés</h3>
+            <ol>
+                <li>A zabkása alaprecept elkészítéséhez egy kisebb edénybe öntjük a tejet, majd belekanalazzuk a zabpelyhet, és 5-10 percet állni hagyjuk.</li>
+                <li>Ha megdagadt a zabpehely, felrakjuk a tűzhelyre, és közepes lángon, állandó kevergetés mellett 5-10 perc alatt krémesre főzzük.</li>
+                <li>Ha elkészült, a tűzről lehúzva, fedő alatt pihentetjük a kész zabkását még néhány percig, majd ízlés szerint mézzel, cukorral vagy más édesítőszerrel ízesítjük, és gyümölcsöket, magvakat rakunk rá.</li>
+            </ol>
+        </article>
+        <figure>
+            <img src="./kesz_kepek/zabkasa.jpg" alt="zabkása" class="zabkasa_kep kiemel">
+        </figure>
+    </div>
+    <div class="poharkrem">
+        <figure>
+            <img src="./kesz_kepek/poharkrem.jpg" alt="málnás pohárkrém" class="poharkrem_kep kiemel">
+        </figure>
+        <article class="poharkrem_szoveg">
+            <h2><a id="poharkrem_recept">Pohárkrém</a></h2>
+            <h3>Hozzávalók</h3>
+            <ul>
+                <li>125 g mascarpone</li>
+                <li>200 ml görög joghurt</li>
+                <li>0.5 citromból nyert citromhéj</li>
+                <li>200 g málna</li>
+                <li>20 ml folyékony édesítőszer</li>
+            </ul>
+            <h3>Elkészítés</h3>
+            <ol>
+                <li>A joghurtot és mascarponét keverjük össze az édesítőszerrel és a citrom héjával.</li>
+                <li>Pár szem málnát tegyünk félre díszítésre. A málnát, ha mirelit, hagyjuk felengedni, és utána édesítőszerrel melegítsük fel.</li>
+                <li>Négy pohár aljában oszlassuk el a málnát, majd tegyük a tetejükre a mascarponés krémet. A tetejét díszítsük málnával.</li>
+            </ol>
+        </article>
+    </div>
+    <div class="cezar_salata">
+        <article class="cezar_salata_szoveg">
+            <h2><a id="cezar_salata_recept">Cézár saláta</a></h2>
+            <h3>Hozzávalók</h3>
+            <h4>A salátához</h4>
+            <ul>
+                <li>1 közepes fej jégsaláta</li>
+                <li>1 db kígyóuborka</li>
+                <li>4 közepes db paradicsom</li>
+                <li>20 dkg csirkemellfilé</li>
+                <li>10 dkg kruton (pirított kenyérkockák)</li>
+            </ul>
+            <h4>Az öntethez</h4>
+            <ul>
+                <li>1 db tojássárgája</li>
+                <li>2 tk mustár</li>
+                <li>4 teáskanál olívaolaj</li>
+                <li>2 gerezd fokhagyma</li>
+                <li>1 csipet petrezselyem</li>
+                <li>1 csipet oregán</li>
+                <li>1 csipet bors</li>
+                <li>1 csipet só</li>
+                <li>2 dl főzőtejszín</li>
+                <li>1 teáskanál worcestershire-szósz</li>
+            </ul>
+            <h3>Elkészítés</h3>
+            <ol>
+                <li>A jégsalátát kettévágjuk, mindkét felét felszeleteljük, 1-1 tálba szórjuk.</li>
+                <li>A paradicsomokat és az uborkát is felszeleteljük, egyenletesen elosztjuk a két tálban.</li>
+                <li>Kézi habverővel kikeverjük az öntetet, (a lényeg, hogy a végén krémes állagú legyen) a tojássárgáját először a mustárral keverjük el, majd hozzáadjuk az olajat és a fűszereketvalamint az összezúzottfokhagymát, végül a tejszínt és a Worchester-szószt. (Ízlés szerint bármiből adagolhatunk akár többet is, főleg, ha az erőteljesebb ízeket kedveljük.)</li>
+                <li>A kész öntetet szintén kettéosztjuk és a két adag salátára kanalazzuk (át is forgathatjuk).</li>
+                <li>A csirkemell filét felkockázzuk, sózzuk, borsozzuk és serpenyőben hirtelen megpirítjuk. Frissen sülve a salátákra halmozzuk.</li>
+                <li>Megszórjuk az adagokat krutonnal (pirított kenyérkockával), fokhagymás-pirítóst teszünk mellé és azonnal tálaljuk.</li>
+            </ol>
+        </article>
+        <figure>
+            <img src="./kesz_kepek/cezar_salata.jpg" alt="cézár saláta" class="cezar_salata_kep kiemel">
+        </figure>
+    </div>
+    <div class="sushi">
+        <figure>
+            <img src="./kesz_kepek/sushi.jpg" alt="sushi" class="sushi_kep kiemel">
+        </figure>
+        <article class="sushi_szoveg">
+            <h2><a id="sushi_recept">Sushi</a></h2>
+            <h3>Hozzávalók</h3>
+            <ul>
+                <li>5 szelet algalap</li>
+                <li>250 g rizs</li>
+                <li>330 ml víz</li>
+            </ul>
+            <h4>Az öntetehez</h4>
+            <ul>
+                <li>2 dl rizsecet</li>
+                <li>3/4 kanál só</li>
+                <li>1 dl nádcukor (vagy xilit)</li>
+            </ul>
+            <h4>A töltelékhez</h4>
+            <ul>
+                <li>150 g lazac (sushi minőségű), vagy lazacszeletek</li>
+                <li>1 nagy sárgarépa (megtisztítva és felszeletelve)</li>
+                <li>1evőkanál wasabi paszta</li>
+                <li>1 avokádó (összetörve vagy szeletelve)</li>
+            </ul>
+            <h4>A tálaláshoz</h4>
+            <ul>
+                <li>szója szósz</li>
+                <li>pácolt gyömbér</li>
+                <li>wasabi tészta</li>
+            </ul>
+            <h3>Elkészítés</h3>
+            <ol>
+                <li>Először eltávolítjuk a felesleges keményítőt a rizsről. Alaposan mossuk le folyó víz alatt egy szűrőben, amíg tiszta víz nem folyik belőle.</li>
+                <li>Ezután csepegtessük le a rizst, és öntsünk egy fazékba 330 ml hideg vizet. Erősebb lángon hagyjuk párolni, majd letakarva kis lángon 10 percig főzzük.</li>
+                <li>Ezután 10 percig állni hagyjuk a fedő alatt. A kapott rizs legyen fényes, ragadós, de a szemcséket még szét kell választani.</li>
+                <li>A tálban egyelőre keverjük össze a sushihoz való ecetet a sóval és a cukorral.</li>
+                <li>A megfőtt rizst egy tálba tesszük (hogy gyorsabban kihűljön), majd összekeverjük az elkészített öntettel. Hagyjuk egy kicsit hűlni a rizst.</li>
+                <li>A sushi összes hozzávalóját előkészítjük, hogy kéznél legyen.Helyezzük az algalapot egy sütő vagy szilikon lapra, fényes oldalával lefelé.</li>
+                <li>A kihűlt rizst az algalapra fektetjük, hagyunk egy kis szabad helyet a lap végén. A rizst egyszerre simítjuk el a kezünkkel.</li>
+                <li>A közepe táján egy keresztirányú csíkot készítünk wasabipasztával, és a halszeleteket, sárgarépát és avokádót, vagy egyéb hozzávalókat a tekercsre terítjük.</li>
+                <li>Megnedvesítjük a kezünket és félig hajtjuk a tekercset, hogy az egész tölteléket ellepje. Vizes kézzel finoman megnyomjuk a tekercset, hogy a belseje összenyomódjon, majd a tekercset teljesen feltekerjük, és ismét jól megnyomjuk (henger alakra).</li>
+                <li>Végül éles és nedves késsel felvágjuk a tekercset. Javaslom, hogy minden vágás előtt töröljük át egy konyharuhával, majd mártsuk vízbe.</li>
+                <li>A folyamatot megismételjük a maradék 4 algalappal.</li>
+                <li>A sushit szójaszósszal, wasabipasztával és pácolt gyömbérrel tálaljuk.</li>
+            </ol>
+        </article>
+    </div>
+    <div class="elofizetes_link_szoveg_doboz">
+        <p class="elofizetes_link_szoveg">A további receptekért kattintson <a href="elofizetes.html" class="elofizetes_link">ide</a></p>
+    </div>
+    <footer>
+        <div class="lablec">
+            <div class="lablec_ures"></div>
+            <div class="lablec_tartalom">
+                <figure class="icon_kep_figure"><img src="./kesz_kepek/favicon_kep.png" alt="icon" class="icon_kep"></figure>
+                <div class="lablec_szoveg">
+                    <p class="lablec_nav"><a href="fooldal.html">Főoldal</a></p>
+                    <p class="lablec_nav"><a href="kaloria_kalkulator.html">Kalória kalkulátor</a></p>
+                    <p class="lablec_nav"><a class="aktualis_lablec_nav" href="#">Receptek</a></li></p>
+                    <p class="lablec_nav"><a href="receptek_elofizetessel.html">Receptek előfizetéssel</a></p>
+                    <p class="lablec_nav"><a href="elofizetes.html">Előfizetés</a></p>
+                    <p class="kapcsolat">Közösségi média:</p>
+                </div>
+                <div class="kozossegi_media">
+                    <figure><a href="https://www.facebook.com/" target="_blank"><img src="./kesz_kepek/facebook_logo.png" alt="Facebook logó"
+                                class="facebook_kep"></a></figure>
+                    <figure><a href="https://www.instagram.com/" target="_blank"><img src="./kesz_kepek/instagram_logo.png" alt="Instagram logó"
+                                class="instagram_kep"></a></figure>
+                    <figure><a href="https://www.snapchat.com/" target="_blank"><img src="./kesz_kepek/snapchat_logo.png" alt="Snapchat logó"
+                                class="snapchat_kep"></a></figure>
+                </div>
+            </div>
+            <div class="lablec_kep kiemel">
+                <figure class="nyil"><a href="#fel"><img src="./kesz_kepek/nyil.png" alt="nyíl" class="kiemel"></a></figure>
+            </div>
+        </div>
+    </footer>
+    </body>
+    
+    </html>

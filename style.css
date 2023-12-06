@@ -1,0 +1,513 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Raleway";
+    background-image: url(./kesz_kepek/hatter.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FEJLÉC */
+
+header {
+    display: flex;
+    background-image: url(./kesz_kepek/fejlec_mobil.png);
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+div.csik {
+    background-color: white;
+    height: 30px;
+    margin-bottom: 0px;
+}
+
+/* MENÜ */
+
+nav {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+nav ul li a.aktualis {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+/* FŐOLDAL, RECEPTEK */
+
+div.bevezetes,
+div.taplalkozas,
+div.mozgas,
+div.viz,
+div.napfeny,
+div.levego,
+div.pihenes,
+div.mertekletesseg,
+div.lelki_egyensuly,
+div.receptek_nav,
+div.zabkasa,
+div.poharkrem,
+div.cezar_salata,
+div.sushi {
+    display: flex;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+p.idezet {
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: smaller;
+}
+
+div.taplalkozas figure,
+div.viz figure,
+div.levego figure,
+div.mertekletesseg figure,
+div.zabkasa figure,
+div.cezar_salata figure {
+    /*display: flex;*/
+    align-self: center;
+}
+
+div.mozgas figure,
+div.napfeny figure,
+div.pihenes figure,
+div.lelki_egyensuly figure,
+div.poharkrem figure,
+div.sushi figure {
+    /*display: flex;*/
+    align-self: center;
+    order: 2;
+}
+
+img.kiemel:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+/* RECEPTEK */
+
+.elofizetes_link_szoveg_doboz {
+    display: flex;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+.elofizetes_link {
+    text-decoration: none;
+    color: rgb(255, 117, 140);
+}
+
+.elofizetes_link_szoveg {
+    font-weight: bold;
+}
+
+/*RECEPTEK NAV*/
+
+.receptek_navigacio {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.receptek_navigacio #receptek_linkek {
+    display: none;
+}
+
+.receptek_navigacio a {
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.receptek_navigacio a.icon {
+    background: black;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.receptek_navigacio a:hover {
+    background-color: pink;
+}
+
+/* KALÓRIA KALKULÁTOR */
+
+.kaloria_kalkulator_doboz {
+    display: flex;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+}
+
+.hiba {
+    color: white;
+    background-color: rgb(255, 117, 140);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.kalkulal_gomb,
+.elofizetes_visszaallit,
+.elofizetes_elkuld {
+    color: black;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Raleway";
+    font-size: 18px;
+}
+
+.kalkulal_gomb:hover,
+.elofizetes_visszaallit:hover,
+.elofizetes_elkuld:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.rozsaszin_szegely {
+    border-color: rgb(255, 117, 140);
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.aktivitas_doboz {
+    width: 300px;
+}
+
+/* GALÉRIA/RECEPTEK ELŐFIZETÉSSEL */
+
+.galeria_szoveg{
+    display: flex;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.galleria {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.galleria img {
+    width: 100%;
+    height: auto;
+}
+
+/* ELŐFIZETÉS */
+
+div.regisztracio,
+div.szamlazasi_cim,
+div.elofizetes_reszletek {
+    display: flex;
+    height: fit-content;
+    width: 300px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.kozep {
+    text-align: center;
+}
+
+.elofizetes_gomb_doboz {
+    text-align: center;
+    margin: 20px;
+}
+
+.elofizetes_doboz {
+    display: flex;
+    flex-direction: column;
+}
+
+/*LÁBLÉC*/
+
+footer {
+    position: relative;
+    padding: 10px;
+    background-color: white;
+}
+
+.nyil {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 0
+}
+
+.icon_kep {
+    width: 100px;
+    height: 100px;
+}
+
+.facebook_kep,
+.instagram_kep,
+.snapchat_kep {
+    width: 30px;
+    height: 30px;
+    transition: ease-in-out 0.5s;
+}
+
+.facebook_kep:hover,
+.instagram_kep:hover,
+.snapchat_kep:hover {
+    transform: scale(1.1);
+}
+
+.lablec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.lablec_tartalom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.lablec_kep {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.lablec_ures {
+    width: 20%;
+}
+
+.kozossegi_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon_kep_figure {
+    display: flex;
+    justify-content: center;
+}
+
+.lablec_szoveg {
+    text-align: center;
+}
+
+.lablec_nav {
+    margin: 10px;
+}
+
+.lablec_nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.lablec_nav a:hover {
+    font-weight: bold;
+}
+
+a.aktualis_lablec_nav {
+    color: rgb(255, 117, 140);
+}
+
+.kapcsolat {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* RESZPONZIVITÁS */
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+
+    header {
+        background-image: url(./kesz_kepek/fejlec_tablet.png);
+        height: 115px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    div.csik {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .aktivitas_doboz {
+        width: 400px;
+    }
+
+    div.regisztracio,
+    div.szamlazasi_cim,
+    div.elofizetes_reszletek {
+        width: 400px;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+    /*számítógép*/
+
+    header {
+        background-image: url(./kesz_kepek/fejlec_szamitogep.png);
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    div.csik {
+        height: 60px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    div.taplalkozas,
+    div.mozgas,
+    div.viz,
+    div.napfeny,
+    div.levego,
+    div.pihenes,
+    div.mertekletesseg,
+    div.lelki_egyensuly,
+    div.zabkasa,
+    div.poharkrem,
+    div.cezar_salata,
+    div.sushi {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div article.mozgas_szoveg,
+    div article.napfeny_szoveg,
+    div article.pihenes_szoveg,
+    div article.lelki_egyensuly_szoveg,
+    div article.poharkrem_szoveg,
+    div article.sushi_szoveg {
+        order: 2;
+    }
+
+    .aktivitas_doboz {
+        width: 500px;
+    }
+
+    div.regisztracio,
+    div.szamlazasi_cim,
+    div.elofizetes_reszletek {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .elofizetes_doboz {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mogyorósi Lilla">
+    <meta name="copyright" content="Oktatási célokra">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./kesz_kepek/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Előfizetés</title>
+    <script src="jquery_validalas/jquery-3.7.1.js"></script>
+    <script src="jquery_validalas/dist/jquery.validate.js"></script>
+    <script src="jquery_js.js"></script>
+    <style>
+        label.error{
+            color: rgb(255, 117, 140);
+            font-size: smaller;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="fel"></h1>
+    </header>
+    <script src="cim.js"></script>
+    <div class="csik"></div>
+    <nav>
+        <ul>
+            <li><a href="fooldal.html">Főoldal</a></li>
+            <li><a href="kaloria_kalkulator.html">Kalória kalkulátor</a></li>
+            <li><a href="receptek.html">Receptek</a></li>
+            <li><a href="receptek_elofizetessel.html">Receptek előfizetéssel</a></li>
+            <li><a class="aktualis" href="#">Előfizetés</a></li>
+        </ul>
+    </nav>
+    <article>
+        <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="urlap" novalidate>
+            <div class="elofizetes_doboz">
+                <div class="regisztracio">
+                    <h2 class="kozep">Regisztráció</h2>
+                    <h3><label for="vezeteknev">Vezetéknév</label><br><input type="text" name="vezeteknev" id="vezeteknev" size="20"
+                            class="rozsaszin_szegely"></h3>
+                    <h3><label for="keresztnev">Keresztnév</label><br><input type="text" name="keresztnev" id="keresztnev" size="20"
+                            class="rozsaszin_szegely"></h3>
+                    <h3><label for="szuletesi_ido">Születési idő</label><br><input type="date" name="szuletesi_ido"
+                            id="szuletesi_ido" size="20" class="rozsaszin_szegely"></h3>
+                    <h3><label for="felhasznalonev">Felhasználónév</label><br><input type="text" name="felhasznalonev"
+                            id="felhasznalonev" size="20" class="rozsaszin_szegely"></h3>
+                    <h3><label for="email_cim">Email</label><br><input type="email" name="email_cim" id="email_cim" size="20"
+                            class="rozsaszin_szegely"></h3>
+                    <h3><label for="jelszo">Jelszó</label><br><input type="password" name="jelszo" id="jelszo" size="20"
+                            class="rozsaszin_szegely">
+                    </h3>
+                    <h4><label for="emlekezz_ram"><input type="checkbox" name="emlekezz_ram" id="emlekezz_ram" value="ON">Emlékezz
+                            rám</label></h4>
+                </div>
+                <div class="szamlazasi_cim">
+                    <h2 class="kozep">Számlázási cím</h2>
+                    <h3><label for="iranyitoszam">Irányítószám</label><br><input type="text" name="iranyitoszam" id="iranyitoszam"
+                            size="20" class="rozsaszin_szegely"></h3>
+                    <h3><label for="telepules">Település</label><br><input type="text" name="telepules" id="telepules" size="20"
+                            class="rozsaszin_szegely"></h3>
+                    <h3><label for="utcanev">Utcanév</label><br><input type="text" name="utcanev" id="utcanev" size="20"
+                            class="rozsaszin_szegely">
+                    </h3>
+                    <h3><label for="telefonszam">Telefonszám</label><br><input type="tel" name="telefonszam" id="telefonszam"
+                            size="20" class="rozsaszin_szegely"></h3>
+                </div>
+                <div class="elofizetes_reszletek">
+                    <h2 class="kozep">Előfizetés</h2>
+                    <h3>
+                        <label>Melyik előfizetést szeretnéd?</label><br>
+                        <select name="elofizetes_idotartam">
+                            <option value="havi">Havi előfizetés (1000 Ft)</option>
+                            <option value="negyedeves">Negyedéves előfizetés (1500 Ft)</option>
+                            <option value="feleves">Féléves előfizetés (2000 Ft)</option>
+                            <option value="eves">Éves előfizetés (2500 Ft)</option>
+                        </select>
+                    </h3>
+                    <h3>Válassza ki a fizetési módot!<br>
+                        <label><input type="radio" name="fizetesi_mod" value="simple_pay">Simple pay</label><br>
+                        <label><input type="radio" name="fizetesi_mod" value="paypal">Paypal</label><br>
+                        <label><input type="radio" name="fizetesi_mod" value="apple_pay">Apple pay</label><br>
+                        <label><input type="radio" name="fizetesi_mod" value="google_pay">Google pay</label>
+                    </h3>
+                    <h4><label for="altalanos_szerzodesi_feltetelek"><input type="checkbox" name="altalanos_szerzodesi_feltetelek"
+                                value="ON">Elfogadom az
+                            általános szerződési feltételeket!</label></h4>
+                </div>
+            </div>
+            <div class="elofizetes_gomb_doboz">
+                <input type="reset" class="elofizetes_visszaallit" value="Visszaállít">
+                <input type="submit" value="Elküld" name="elkuldes" class="elofizetes_elkuld">
+            </div>
+            </form>
+            </article>
+            <footer>
+                <div class="lablec">
+                    <div class="lablec_ures"></div>
+                    <div class="lablec_tartalom">
+                        <figure class="icon_kep_figure"><img src="./kesz_kepek/favicon_kep.png" alt="icon" class="icon_kep">
+                        </figure>
+                        <div class="lablec_szoveg">
+                            <p class="lablec_nav"><a href="fooldal.html">Főoldal</a></p>
+                            <p class="lablec_nav"><a href="kaloria_kalkulator.html">Kalória kalkulátor</a></p>
+                            <p class="lablec_nav"><a href="receptek.html">Receptek</a></li>
+                            </p>
+                            <p class="lablec_nav"><a href="receptek_elofizetessel.html">Receptek előfizetéssel</a></p>
+                            <p class="lablec_nav"><a class="aktualis_lablec_nav" href="#">Előfizetés</a></p>
+                            <p class="kapcsolat">Közösségi média:</p>
+                        </div>
+                        <div class="kozossegi_media">
+                            <figure><a href="https://www.facebook.com/" target="_blank"><img src="./kesz_kepek/facebook_logo.png"
+                                        alt="Facebook logó" class="facebook_kep"></a></figure>
+                            <figure><a href="https://www.instagram.com/" target="_blank"><img src="./kesz_kepek/instagram_logo.png"
+                                        alt="Instagram logó" class="instagram_kep"></a></figure>
+                            <figure><a href="https://www.snapchat.com/" target="_blank"><img src="./kesz_kepek/snapchat_logo.png"
+                                        alt="Snapchat logó" class="snapchat_kep"></a></figure>
+                        </div>
+                    </div>
+                    <div class="lablec_kep kiemel">
+                        <figure class="nyil"><a href="#fel"><img src="./kesz_kepek/nyil.png" alt="nyíl" class="kiemel"></a></figure>
+                    </div>
+                </div>
+            </footer>
+            </body>
+            
+            </html>

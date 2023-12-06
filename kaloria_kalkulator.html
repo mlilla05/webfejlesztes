@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mogyorósi Lilla">
+    <meta name="copyright" content="Oktatási célokra">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./kesz_kepek/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Kalória kalkulátor</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="fel"></h1>
+    </header>
+    <script src="cim.js"></script>
+    <div class="csik"></div>
+    <nav>
+        <ul>
+            <li><a href="fooldal.html">Főoldal</a></li>
+            <li><a class="aktualis" href="#">Kalória kalkulátor</a></li>
+            <li><a href="receptek.html">Receptek</a></li>
+            <li><a href="receptek_elofizetessel.html">Receptek előfizetéssel</a></li>
+            <li><a href="elofizetes.html">Előfizetés</a></li>
+        </ul>
+    </nav>
+    <div class="kaloria_kalkulator_doboz">
+        <div class="hibauzenet">
+            <h2 class="kaloria_kalkulator_cim">Kalória kalkulátor</h2>
+            <form id="kaloria_kalkulator_urlap">
+                <div>
+                    <label for="kor">
+                        <h4>Kor</h4>
+                    </label>
+                    <div>
+                        <input type="number" class="kor_class rozsaszin_szegely" id="kor" placeholder="(15-120) év">
+                    </div>
+                </div>
+                <h4>Nem</h4>
+                <div id="urlap_radio_gomb">
+                    <div>
+                        <input type="radio" id="ferfi" name="nem" checked="checked">
+                        <label for="ferfi">Férfi</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="no" name="nem">
+                        <label for="no">Nő</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="suly">
+                        <h4>Súly</h4>
+                    </label>
+                    <div>
+                        <input type="number" id="suly" placeholder="(30-300) kg" class="rozsaszin_szegely">
+                    </div>
+                </div>
+                <div>
+                    <label for="magassag">
+                        <h4>Magasság</h4>
+                    </label>
+                    <div>
+                        <input type="number" id="magassag" placeholder="(100-300) cm" class="rozsaszin_szegely">
+                    </div>
+                </div>
+                <div>
+                    <h4>Aktivitás</h4>
+                    <select id="aktivitas" size="1" class="rozsaszin_szegely aktivitas_doboz">
+                        <option selected value="1">Nem aktív (keveset vagy egyáltalán nem mozog)</option>
+                        <option value="2">Enyhén aktív (könnyű testmozgás/sport 1-3 nap/hét)</option>
+                        <option value="3">Közepesen aktív (mérsékelt testmozgás/sport 3-5 nap/hét)</option>
+                        <option value="4">Nagyon aktív (kemény edzés/sport heti 6-7 napon)</option>
+                        <option value="5">Extra aktív (nagyon kemény edzés/sport és fizikai munka vagy 2x edzés)
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <input class="kalkulal_gomb" type="submit" value="Kalkulál">
+                </div>
+            </form>
+            <div id="eredmeny">
+                <h3>Napi kalóriaszükséglet:</h3>
+                <div>
+                    <div>
+                        <input type="number" id="napi_kaloriaszukseglet" class="rozsaszin_szegely" placeholder="kcal" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="kaloria_kalkulator_js.js"></script>
+    <footer>
+        <div class="lablec">
+            <div class="lablec_ures"></div>
+            <div class="lablec_tartalom">
+                <figure class="icon_kep_figure"><img src="./kesz_kepek/favicon_kep.png" alt="icon" class="icon_kep"></figure>
+                <div class="lablec_szoveg">
+                    <p class="lablec_nav"><a href="fooldal.html">Főoldal</a></p>
+                    <p class="lablec_nav"><a class="aktualis_lablec_nav" href="#">Kalória kalkulátor</a></p>
+                    <p class="lablec_nav"><a href="receptek.html">Receptek</a></li></p>
+                    <p class="lablec_nav"><a href="receptek_elofizetessel.html">Receptek előfizetéssel</a></p>
+                    <p class="lablec_nav"><a href="elofizetes.html">Előfizetés</a></p>
+                    <p class="kapcsolat">Közösségi média:</p>
+                </div>
+                <div class="kozossegi_media">
+                    <figure><a href="https://www.facebook.com/" target="_blank"><img src="./kesz_kepek/facebook_logo.png" alt="Facebook logó"
+                                class="facebook_kep"></a></figure>
+                    <figure><a href="https://www.instagram.com/" target="_blank"><img src="./kesz_kepek/instagram_logo.png" alt="Instagram logó"
+                                class="instagram_kep"></a></figure>
+                    <figure><a href="https://www.snapchat.com/" target="_blank"><img src="./kesz_kepek/snapchat_logo.png" alt="Snapchat logó"
+                                class="snapchat_kep"></a></figure>
+                </div>
+            </div>
+            <div class="lablec_kep kiemel">
+                <figure class="nyil"><a href="#fel"><img src="./kesz_kepek/nyil.png" alt="nyíl" class="kiemel"></a></figure>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
